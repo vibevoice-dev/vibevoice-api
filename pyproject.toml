@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibevoice-api"
+version = "0.1.0"
+description = "Python client for VibeVoice-class expressive, long-form text-to-speech and voice cloning through a hosted API on Synexa"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "vibevoice-dev"}]
+keywords = ["ai api", "mimo-tts", "synexa", "tts-v3", "vibevoice", "vibevoice api", "vibevoice python"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/vibevoice-dev/vibevoice-api"
+Documentation = "https://vibevoice-dev.github.io/vibevoice-api/"
+"Hosted model" = "https://synexa.ai/explore/xiaomi/mimo-tts?utm_source=github&utm_medium=ugc&utm_campaign=vibevoice-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["vibevoice_api*"]
